@@ -260,7 +260,7 @@ void Catalog::setObjectFilters(QStringList filters, bool only_matching, bool mat
 			if(pattern.contains(UtilsNs::WildcardChar))
 			{
 				QStringList list = pattern.split(UtilsNs::WildcardChar, Qt::KeepEmptyParts);
-				QString any_str = 		connection.setRole(conn.getRole("(.)*";
+				QString any_str = "(.)*";
 				pattern.clear();
 
 				for(auto &word : list)
